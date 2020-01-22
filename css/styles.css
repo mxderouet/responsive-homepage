@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Jetbrains Mono";
+    src: url("/fonts/JetBrainsMono-Regular.ttf");
+    font-weight: 400;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Jetbrains Mono";
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+nav {
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Jetbrains Mono";
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    border-top: 2px solid white;
+}
+
+@media screen and (min-width: 640px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
+        padding: 20px;
+    }
+    nav {
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border-radius: 50px;
+    }
+    li {
+        padding: 15px;
+    }
+    li:not(:last-child) {
+        border-right: 1px solid white;
+    }
+}
+
+h1 {
+    background-color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    padding: 0 20px;
+}
+
+h3 {
+    margin: 0;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 640px) {
+    button {
+        height: 30px;
+        padding: 5px;
+    }
+}
+
+.products {
+    margin-top: 20px;
+    background-color: white;
+}
+
+.product-card {
+    margin: 0 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px lightgrey;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-image {
+    width: 30%;
+    margin-right: 20px;
+}
+
+img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.product-description {
+    width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product-card {
+        width: calc(50% - 40px);
+        margin: 20px 20px;
+    }
+    button {
+        width: 80px;
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+.sidebar {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+}
+
+.price {
+    text-align: right;
+}
+
+@media screen and (min-width: 640px) {
+    .price {
+        text-align: right;
+    }
+    .size-and-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
